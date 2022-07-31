@@ -31,5 +31,32 @@ namespace pharmacy_manegment_practice
         {
 
         }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            Form1 fm = new Form1(); 
+            fm.Show();
+            this.Hide();
+        }
     }
 }
