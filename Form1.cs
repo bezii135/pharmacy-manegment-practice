@@ -52,7 +52,7 @@ namespace pharmacy_manegment_practice
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            if(txtusername.Text=="btechdays"  &&  txtpassword.Text=="pass")
+            if(txtusername.Text=="Beza"  &&  txtpassword.Text=="pass")
             {
                 Administrator am = new Administrator();
                 am.Show();
@@ -65,6 +65,11 @@ namespace pharmacy_manegment_practice
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtpassword_TextChanged(object sender, EventArgs e)
         {
 
         }

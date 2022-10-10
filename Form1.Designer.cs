@@ -75,7 +75,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(65, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 162);
+            this.label1.Size = new System.Drawing.Size(235, 159);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pharmacy \r\nmanegment\r\n system";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -91,9 +91,9 @@
             this.btnexit.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.btnexit.ForeColor = System.Drawing.Color.White;
             this.btnexit.Image = ((System.Drawing.Image)(resources.GetObject("btnexit.Image")));
-            this.btnexit.Location = new System.Drawing.Point(1358, 0);
+            this.btnexit.Location = new System.Drawing.Point(1363, 0);
             this.btnexit.Name = "btnexit";
-            this.btnexit.Size = new System.Drawing.Size(24, 54);
+            this.btnexit.Size = new System.Drawing.Size(18, 48);
             this.btnexit.TabIndex = 1;
             this.btnexit.Text = "EXIT";
             this.btnexit.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -165,6 +165,7 @@
             this.txtpassword.PasswordChar = '*';
             this.txtpassword.Size = new System.Drawing.Size(344, 34);
             this.txtpassword.TabIndex = 8;
+            this.txtpassword.TextChanged += new System.EventHandler(this.txtpassword_TextChanged);
             // 
             // btnsignin
             // 

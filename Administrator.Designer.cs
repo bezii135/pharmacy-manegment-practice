@@ -28,19 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administrator));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.Dash_board = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.uC_ViewUser1 = new pharmacy_manegment_practice.UC_ViewUser();
+            this.uC_AddUser1 = new pharmacy_manegment_practice.UC_AddUser();
+            this.uC_Dashboard1 = new pharmacy_manegment_practice.UC_Dashboard();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_Profile1 = new pharmacy_manegment_practice.UC_Profile();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -51,14 +63,25 @@
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.guna2Button3);
             this.panel1.Controls.Add(this.guna2Button2);
-            this.panel1.Controls.Add(this.guna2Button1);
+            this.panel1.Controls.Add(this.Dash_board);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(3, 2);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(395, 808);
+            this.panel1.Size = new System.Drawing.Size(399, 808);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.Location = new System.Drawing.Point(192, 703);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(52, 28);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Beza";
             // 
             // guna2Button4
             // 
@@ -144,26 +167,26 @@
             this.guna2Button2.Text = "Add user";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // guna2Button1
+            // Dash_board
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button1.Location = new System.Drawing.Point(68, 251);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(225, 56);
-            this.guna2Button1.TabIndex = 2;
-            this.guna2Button1.Text = "Dash board ";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.Dash_board.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Dash_board.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Dash_board.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Dash_board.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Dash_board.FillColor = System.Drawing.Color.DarkGray;
+            this.Dash_board.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Dash_board.ForeColor = System.Drawing.Color.White;
+            this.Dash_board.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.Dash_board.HoverState.FillColor = System.Drawing.Color.White;
+            this.Dash_board.HoverState.ForeColor = System.Drawing.Color.White;
+            this.Dash_board.Image = ((System.Drawing.Image)(resources.GetObject("Dash_board.Image")));
+            this.Dash_board.ImageSize = new System.Drawing.Size(30, 30);
+            this.Dash_board.Location = new System.Drawing.Point(68, 251);
+            this.Dash_board.Name = "Dash_board";
+            this.Dash_board.Size = new System.Drawing.Size(225, 56);
+            this.Dash_board.TabIndex = 2;
+            this.Dash_board.Text = "Dash board ";
+            this.Dash_board.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label1
             // 
@@ -180,7 +203,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(71, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(222, 184);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -189,21 +212,73 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.uC_Profile1);
+            this.panel2.Controls.Add(this.uC_ViewUser1);
+            this.panel2.Controls.Add(this.uC_AddUser1);
+            this.panel2.Controls.Add(this.uC_Dashboard1);
             this.panel2.Location = new System.Drawing.Point(394, 5);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(985, 763);
             this.panel2.TabIndex = 1;
             // 
-            // label2
+            // uC_ViewUser1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(192, 703);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 28);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "btechdays";
+            this.uC_ViewUser1.BackColor = System.Drawing.Color.White;
+            this.uC_ViewUser1.Location = new System.Drawing.Point(0, -5);
+            this.uC_ViewUser1.Name = "uC_ViewUser1";
+            this.uC_ViewUser1.Size = new System.Drawing.Size(1279, 816);
+            this.uC_ViewUser1.TabIndex = 2;
+            // 
+            // uC_AddUser1
+            // 
+            this.uC_AddUser1.BackColor = System.Drawing.Color.White;
+            this.uC_AddUser1.Location = new System.Drawing.Point(0, -5);
+            this.uC_AddUser1.Name = "uC_AddUser1";
+            this.uC_AddUser1.Size = new System.Drawing.Size(1448, 962);
+            this.uC_AddUser1.TabIndex = 1;
+            this.uC_AddUser1.Load += new System.EventHandler(this.uC_AddUser1_Load_1);
+            // 
+            // uC_Dashboard1
+            // 
+            this.uC_Dashboard1.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.uC_Dashboard1.Location = new System.Drawing.Point(0, -5);
+            this.uC_Dashboard1.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
+            this.uC_Dashboard1.Name = "uC_Dashboard1";
+            this.uC_Dashboard1.Size = new System.Drawing.Size(1000, 770);
+            this.uC_Dashboard1.TabIndex = 0;
+            this.uC_Dashboard1.Load += new System.EventHandler(this.uC_Dashboard1_Load);
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // guna2AnimateWindow1
+            // 
+            this.guna2AnimateWindow1.TargetForm = this;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this.panel2;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.TargetControl = this.panel2;
+            // 
+            // uC_Profile1
+            // 
+            this.uC_Profile1.BackColor = System.Drawing.Color.White;
+            this.uC_Profile1.Location = new System.Drawing.Point(0, -5);
+            this.uC_Profile1.Name = "uC_Profile1";
+            this.uC_Profile1.Size = new System.Drawing.Size(1335, 860);
+            this.uC_Profile1.TabIndex = 3;
             // 
             // Administrator
             // 
@@ -220,6 +295,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -234,7 +310,17 @@
         private Guna.UI2.WinForms.Guna2Button btnLogout;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button Dash_board;
         private Label label2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private UC_Dashboard uC_Dashboard1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private UC_AddUser uC_AddUser1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private UC_ViewUser uC_ViewUser1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private UC_Profile uC_Profile1;
     }
 }
