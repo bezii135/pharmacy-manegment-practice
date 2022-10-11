@@ -1,3 +1,5 @@
+using pharmacy_manegment_practice.Pharmasict_Folder;
+
 namespace pharmacy_manegment_practice
 {
     public partial class Form1 : Form
@@ -55,6 +57,12 @@ namespace pharmacy_manegment_practice
             if(txtusername.Text=="Beza"  &&  txtpassword.Text=="pass")
             {
                 Administrator am = new Administrator();
+                am.Show();
+                this.Hide();
+            }
+            else if(txtusername.Text=="Birukti"&& txtpassword.Text == "pass")
+            {
+                Pharmacist am = new Pharmacist();
                 am.Show();
                 this.Hide();
             }
