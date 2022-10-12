@@ -11,7 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UC_Dashboard1", "..\UC_Dash
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Main1", "..\Main1\Main1.csproj", "{2F9AF429-B5B0-4FF6-B81D-39431492F55D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1", "..\1\1.csproj", "{56F18880-4332-4914-96C9-4F9FCB03F3E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1", "..\1\1.csproj", "{56F18880-4332-4914-96C9-4F9FCB03F3E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF63A424-E930-49F9-8BD3-0716433789E2}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

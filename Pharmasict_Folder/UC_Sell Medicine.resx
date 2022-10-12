@@ -57,11 +57,63 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnAdd.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAQ2SURBVFhH7ZjZbxtFHMcNEhI8IVRxSECR+AtAvPCEeOABcUg80L5U8bm7duyooiLxXrFxUh9x
+        4iuxMXJtr4+kNE3ihEISYuI0VCqFFhrSQyKiQamQAJVCj5AoIXEz/BzNSlDG0XqTKkbiI31lz/z2N9+f
+        Z3d2dq35T6BPsW8as/w1Y0pElNuHGD7yC8OHSjQfeQMfsrsYM8Jvvd8OofzMIDJJwnVKiDzO8OG3GC48
+        B59+fNjuYZT4G32zBdQ3O4QMUCzu1tj42B4o8IqZC72Ku3aHzVOc4W8YJeF3XYp9HXdvQgthPRRZwM36
+        w8D3PAoF3tRo0H24q/6AAn8yiYFncLP+oJ1d81SkvdSQYu3apP1tbYp7nkmwD+Pw7kN7/OcPxgMbnmKs
+        zA77lxuPOpd0Els2SPwynRfnzb2tRfje1ZC2m/RJ7mVtgt3rcrnux+n3HpPPkzwYCK1/dnUK/V2jVyZQ
+        /8URlDx7FIU/T6H2T7tX3x303mbyrUvalH3DIHHLpqzwPZUTx6DdoUvaGa3U/IpR4p7VIM3OXdM6v/uA
+        uS1YvrvArTSxMImGvxtFuZkBFD+dRR2T8XXhRGCp6VjbbZjtP/Vpdg3uHD+bMsJprWRPwg9gG1It+3RJ
+        7oV9A4cewtbKsHm9e2ghhMbnJ4nF1KriQmmz+DwU//4XOeQvfbDGj3TdavrQdROKXtGl7Wsw+19ie2XQ
+        jkA5d6ZANKwmGVJsK8Vgxqm8+DG2VgZzuPOavyARB6wmGVJsK4kngn/AKddha2VQHt8p9kh0gzRgNcmQ
+        YlW1MIXgulzRZ1qewNbKgJUcsnUE/7WSt5IMKVZNxy6MIFNOvIptlUN5D7/GOAN3SIPKUgopV1ZwOgn3
+        Vy6KbZWjd7keZGAlfzJXJA5ckVJIubIOHffc0qda1D09MW3B1cR0P3FgkmRIMZLGfygiQ5pbrfk+KMO4
+        O390H08SBydJhhQjSfq6H9HZ1nPYrnZMPt94czyqeEeRIcVIck/EVrRplsN2tWP0e96zepWvZBlSjCRL
+        r2NRf6TlOWxXO5Tf9SLdGqrpXqhUla3PkOEXt/cQAcmMGNoYujRGNNmOKnsyPPmMYCf1MO2dy7FiH9FE
+        rSqr950BzxI8JBzANuqhPP45Y7ANwV65Y4LC7lAZocAkmAewjXoYIWwDJXCz/jCzkZfgJeoMbtYfjVz8
+        EShw8f/X0O0ABRbhOvzHPxB1hZmLsFBkHDfrD6sYfBpm8DothNVvS/caeMvbD7P4K8NHzJbmrsdwd31R
+        mUFG7C5aHT3rFrEbWR1RBEUrUqOjB92dg4fdWazO2Dfh7Fh5sDSLQpnRcpMzehaHqqImRzUWoXu1cPIC
+        +ujUZTQ0NYsqbRyqipoc1dicsXOV2Rievrg5G9D+CoeqoiZHNZS95ym4BmfMfASMouctYuhJHKqKmpw6
+        RaP5C4LKvj+DunsdAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="guna2Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAEfSURBVEhL7ZUxagJRFEUHUrsOwf+f+0h63YAEzCJiZSTpkxVoZZmsQAurFLoAo5UzIGiX1twP
+        t/o+//vGJhAPHASde3ScEYv/SSUipfdf4ZFPXQZibTiOnMEDH+PX2pzalCIvGCzhNwzBXMPxy9K5Z6ZO
+        s/F+gIM/f2vYM/UHqLzvh9M+17BjwganvYba957WuRUTNjh4qkZsJ0zY4LRHSsAUuyETNrzD1FBK7J6Y
+        sMHgIQ7kiDfpMmGDH+SdFjEVuWXCpmo2vRqxbDQcEzbber2mRgzDjok8cKfstVDCHaf5YLSIIklx0eec
+        5oPhRxwyfOc0H4zeokhakVdO89k4d6/GTohr2OE0n0OrdYNP10Mg/gc8VuQxHM/plUsoih/J1iqE4fIR
+        VAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="guna2Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAANRSURBVFhH7ZftS1NRHMdHEEH0L/Q/BEH0UlC2tjW3pIIiIn2RJFoiWZRW9qKgTGeG6Zx3c64X
+        lUVEILS1Bx9yanMZmk4zSefzNtF06pj565xxlN15tntvuoraFz44L2f3+7nn3LudiZJJJpn/LQ6xWNEp
+        Fs84UlMhUXRIJDOdaWlyUiksSM7nLS6GFbU6YXiLiqBTIvGSSmHBV0g76U6De0ilsBxKUcDvglQKC+1E
+        iYJUcsdWlbLPqj/KvGNkq7QTJQpSHz9mrfSw1ZA+9dmUG1yd1FBPlCiIAj1NldI91nqFxt6gCvjdpQBz
+        xjB/xUNiqpUdQHKjfaacQGiG2ZSLFkxE4gqWlJTssjLpN6wGxdJ07931SLE/LvhWJ95vMyid3a8zA8Gp
+        2i1iG0QKJhKWoFkrz7AZlfMjjmuhdT9dbIN4gosVpdBfcwGadcfAziihT5MNgYpy6lguWIKOxlPww1dP
+        FYomluBE5XUklgH9pjxYGa+BwGgVdL88B/3VOdTxXLAE17z85DDRgosV96CnNgvajMdhbrCMNRaL2hkV
+        azxfWIKRJ43HxMfbLEHPo6to1lTgtlwC2kUue7CgklXMF8GCS2jJLDo5ESyH4ep8eP/kJMwPo6eZMh7f
+        Mq5XmTBQswNLTCuIZtx1Cyx6ObScF0NrXQYM2Qti3rehWR18eHEWerRZsIwuhibAhWDB0Kwe0EcQdD07
+        AwtfH1LHYIKTWuh4eir8BC9TivmA95t430n0+N+DXATGHkOzXgUtueLwDPwqSM7P2lHTyoSCZ9VuVIG5
+        TgrTfUUsTNoj1GOknju0QiH43PcBfQvBUGtuTBnaMVLPHVopX6Z774C9QQkjjvy4MrRjpJ47tGI+eJw3
+        w8v6rauAVRwpgjEzMvC4rmz+73EVAtr8zpN67tDKufjSdjmEdtkw5ixkyVAF0X3Z/vxEAIthUfzaysjK
+        SD13aAKxwJuJAcvFINplD/KdLQuaLYtOVo7+fg+DXjs1B3eTeu7QRGis+wzwqSl72VavbMe/U5DMwpal
+        08lXtzVbtNBkIsHfs373A3A0nl606tPtbzSKvfh9ZkaujpaxMVL1tmaLFrxU8UA/nNbQkrrNjDQP77rJ
+        20S4eMdlkkkmmX8qItFPZZpCj5OALMUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="guna2Button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAACMtJREFUeF7t
         W2lwU1UUrvvyw2Ucf+kPHR11xnGBpKkoKuq4i+sgLoOOG+pIJUlBURTuS6GASMFSQASRtuwioIiKIspW
@@ -1118,37 +1170,4 @@
         4AI+4ARe4AZ+4Aie4KeTAAA7
 </value>
   </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Admin is the role with the highest level of 
-acces.
-Admins can add content and access all 
-items in the Admins Toolbar 
- This means that admins cancontrol
- setting  like the design etc 
-They can add and delete other admin user 
-and can approve or deny edits made by us</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Admin is the role with the highest level of 
-acces.
-Admins can add content and access all 
-items in the Admins Toolbar 
- This means that admins cancontrol
- setting  like the design etc 
-They can add and delete other admin user 
-and can approve or deny edits made by us</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Admin is the role with the highest level of 
-acces.
-Admins can add content and access all 
-items in the Admins Toolbar 
- This means that admins cancontrol
- setting  like the design etc 
-They can add and delete other admin user 
-and can approve or deny edits made by us</value>
-  </data>
-  <metadata name="guna2AnimateWindow1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>160, 17</value>
-  </metadata>
 </root>

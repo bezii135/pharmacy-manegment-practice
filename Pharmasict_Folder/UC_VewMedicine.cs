@@ -10,25 +10,14 @@ using System.Windows.Forms;
 
 namespace pharmacy_manegment_practice.Pharmasict_Folder
 {
-    public partial class UC_P_Dashboard : UserControl
+    public partial class UC_VewMedicine : UserControl
     {
-        
-        public UC_P_Dashboard()
+        public UC_VewMedicine()
         {
             InitializeComponent();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void UC_P_Dashboard_Load(object sender, EventArgs e)
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

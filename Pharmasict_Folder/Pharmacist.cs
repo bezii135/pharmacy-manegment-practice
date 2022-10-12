@@ -16,12 +16,38 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
         {
             InitializeComponent();
         }
+       
 
-        private void guna2Button7_Click(object sender, EventArgs e)
+            private void guna2Button7_Click(object sender, EventArgs e)
         {
             Form1 fm=new Form1();
             fm.ShowDialog();    
             this.Hide();    
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -57,9 +57,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="guna2Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1118,37 +1115,4 @@
         4AI+4ARe4AZ+4Aie4KeTAAA7
 </value>
   </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Admin is the role with the highest level of 
-acces.
-Admins can add content and access all 
-items in the Admins Toolbar 
- This means that admins cancontrol
- setting  like the design etc 
-They can add and delete other admin user 
-and can approve or deny edits made by us</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Admin is the role with the highest level of 
-acces.
-Admins can add content and access all 
-items in the Admins Toolbar 
- This means that admins cancontrol
- setting  like the design etc 
-They can add and delete other admin user 
-and can approve or deny edits made by us</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Admin is the role with the highest level of 
-acces.
-Admins can add content and access all 
-items in the Admins Toolbar 
- This means that admins cancontrol
- setting  like the design etc 
-They can add and delete other admin user 
-and can approve or deny edits made by us</value>
-  </data>
-  <metadata name="guna2AnimateWindow1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>160, 17</value>
-  </metadata>
 </root>

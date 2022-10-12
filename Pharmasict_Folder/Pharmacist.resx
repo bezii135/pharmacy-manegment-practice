@@ -58,7 +58,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="guna2Button7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnlogout.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAABJ
         0QAASdEBBfyrlQAAEb5JREFUaEPdm3dUVNfahw9ejQ0RK9UCir0X7AULCBYQlN6bFMFeE2NiqjFqNMaO
@@ -140,7 +140,7 @@
         h3E3sgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2Button6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnsellmedicne.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABP9JREFUeF7t
         m2nIbVMYx19kTsg8RF1kygdjGUOGewn3lqFISMgHyRAhc4Yo4oMh3Ns1hZAQMg/5gGQqU5nJTBkyD7/f
@@ -167,7 +167,7 @@
         zgx3pbzDUkVNTPwL26hkaxPUtQsAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2Button5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnmedicinevaliditycheck.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAvNJREFUWEft
         lltPE0EUx/kqGhO/gQ8m4iVqNNEHE018KNguVVM0Yoxtt0XgRXzRCAX1pd1ty0UQogiJIIUitBEEpIK0
@@ -185,7 +185,7 @@
         43FUmY/REi4VMuZv2Gh2F4tQS8NFxaelKS/vBypxNHO+Q2V8AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="guna2Button4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnaddmedicine.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAABRFJREFUaEPt
         mV1Mm2UUgOvPgtDSX/oDLbQk3Hm5uIt5s40VKH+jsAJbh0LLlmjiFRde7AYZbWFlUEphVHDI6FwHZYuJ
@@ -212,7 +212,7 @@
         oHxyj3wS5dfk/pNxPBIPlAzV/jdesx5wwP8emewviyk93SUwL8QAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="guna2Button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnmodifymedicine.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAUdJREFUWEft
         lb1KxEAURgPiHwviU1ipnYKV+EjiG2jlY9hoIVgoom5n6VPYKIKNrY3o+Za9MN5MmMkmsyjkwCHcm8x8
@@ -223,7 +223,7 @@
         gaF64fRJzoVLPMND1E9mHTOpqh+7FSLPjPI/KgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnviewmedicine.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAABhBJREFUeF7t
         m0fIJEUUx8ecRTErZldFDAcPiooHbyYURcTFuIfFAIrpoGI4GEEUEQMKgigq5rS4ihE9qChiDqiIImJE
@@ -255,7 +255,7 @@
         RK5CYII=
 </value>
   </data>
-  <data name="guna2Button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btndashbaord.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAehJREFUWEft
         lc1LAkEYh/fv6yB1j4guWUQdooggSOjmJbDoQy/RqYIOgQSi4CdRRFh0KlBztY9Lfhvtpm8z08y4Lrvl
@@ -297,4 +297,7 @@
         TCaTyWRKRTMz/wJVunI4BqFFeAAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="guna2Elipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

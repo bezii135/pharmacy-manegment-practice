@@ -10,27 +10,20 @@ using System.Windows.Forms;
 
 namespace pharmacy_manegment_practice.Pharmasict_Folder
 {
-    public partial class UC_P_Dashboard : UserControl
+    public partial class UC_P_AddMedicine : UserControl
     {
-        
-        public UC_P_Dashboard()
+        public UC_P_AddMedicine()
         {
             InitializeComponent();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void btnReset_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void UC_P_Dashboard_Load(object sender, EventArgs e)
-        {
-
+            txtMedID.Text = "";
+            txtMedName.Text = "";
+            txtMedNumber.Text = "";
+            txtPrice.Text = "";
+            txtQuantity.Text = "";
         }
     }
 }

@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_Profile1 = new pharmacy_manegment_practice.UC_Profile();
             this.uC_ViewUser1 = new pharmacy_manegment_practice.UC_ViewUser();
             this.uC_AddUser1 = new pharmacy_manegment_practice.UC_AddUser();
             this.uC_Dashboard1 = new pharmacy_manegment_practice.UC_Dashboard();
@@ -49,7 +50,6 @@
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_Profile1 = new pharmacy_manegment_practice.UC_Profile();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -221,10 +221,18 @@
             this.panel2.Size = new System.Drawing.Size(985, 763);
             this.panel2.TabIndex = 1;
             // 
+            // uC_Profile1
+            // 
+            this.uC_Profile1.BackColor = System.Drawing.Color.White;
+            this.uC_Profile1.Location = new System.Drawing.Point(0, -5);
+            this.uC_Profile1.Name = "uC_Profile1";
+            this.uC_Profile1.Size = new System.Drawing.Size(1335, 860);
+            this.uC_Profile1.TabIndex = 3;
+            // 
             // uC_ViewUser1
             // 
             this.uC_ViewUser1.BackColor = System.Drawing.Color.White;
-            this.uC_ViewUser1.Location = new System.Drawing.Point(0, -5);
+            this.uC_ViewUser1.Location = new System.Drawing.Point(-14, -5);
             this.uC_ViewUser1.Name = "uC_ViewUser1";
             this.uC_ViewUser1.Size = new System.Drawing.Size(1279, 816);
             this.uC_ViewUser1.TabIndex = 2;
@@ -271,14 +279,6 @@
             // guna2Elipse5
             // 
             this.guna2Elipse5.TargetControl = this.panel2;
-            // 
-            // uC_Profile1
-            // 
-            this.uC_Profile1.BackColor = System.Drawing.Color.White;
-            this.uC_Profile1.Location = new System.Drawing.Point(0, -5);
-            this.uC_Profile1.Name = "uC_Profile1";
-            this.uC_Profile1.Size = new System.Drawing.Size(1335, 860);
-            this.uC_Profile1.TabIndex = 3;
             // 
             // Administrator
             // 

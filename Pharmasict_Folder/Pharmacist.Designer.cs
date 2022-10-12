@@ -28,18 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pharmacist));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnlogout = new Guna.UI2.WinForms.Guna2Button();
+            this.btnsellmedicne = new Guna.UI2.WinForms.Guna2Button();
+            this.btnmedicinevaliditycheck = new Guna.UI2.WinForms.Guna2Button();
+            this.btnaddmedicine = new Guna.UI2.WinForms.Guna2Button();
+            this.btnmodifymedicine = new Guna.UI2.WinForms.Guna2Button();
+            this.btnviewmedicine = new Guna.UI2.WinForms.Guna2Button();
+            this.btndashbaord = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,13 +49,13 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Tan;
-            this.panel1.Controls.Add(this.guna2Button7);
-            this.panel1.Controls.Add(this.guna2Button6);
-            this.panel1.Controls.Add(this.guna2Button5);
-            this.panel1.Controls.Add(this.guna2Button4);
-            this.panel1.Controls.Add(this.guna2Button3);
-            this.panel1.Controls.Add(this.guna2Button2);
-            this.panel1.Controls.Add(this.guna2Button1);
+            this.panel1.Controls.Add(this.btnlogout);
+            this.panel1.Controls.Add(this.btnsellmedicne);
+            this.panel1.Controls.Add(this.btnmedicinevaliditycheck);
+            this.panel1.Controls.Add(this.btnaddmedicine);
+            this.panel1.Controls.Add(this.btnmodifymedicine);
+            this.panel1.Controls.Add(this.btnviewmedicine);
+            this.panel1.Controls.Add(this.btndashbaord);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -62,139 +64,144 @@
             this.panel1.Size = new System.Drawing.Size(327, 782);
             this.panel1.TabIndex = 0;
             // 
-            // guna2Button7
+            // btnlogout
             // 
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button7.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.guna2Button7.HoverState.FillColor = System.Drawing.Color.Peru;
-            this.guna2Button7.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button7.Image")));
-            this.guna2Button7.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button7.Location = new System.Drawing.Point(3, 710);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.Size = new System.Drawing.Size(324, 56);
-            this.guna2Button7.TabIndex = 8;
-            this.guna2Button7.Text = "Log Out";
-            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
+            this.btnlogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnlogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnlogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnlogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnlogout.FillColor = System.Drawing.Color.Transparent;
+            this.btnlogout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnlogout.ForeColor = System.Drawing.Color.White;
+            this.btnlogout.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.btnlogout.HoverState.FillColor = System.Drawing.Color.Peru;
+            this.btnlogout.Image = ((System.Drawing.Image)(resources.GetObject("btnlogout.Image")));
+            this.btnlogout.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnlogout.Location = new System.Drawing.Point(3, 710);
+            this.btnlogout.Name = "btnlogout";
+            this.btnlogout.Size = new System.Drawing.Size(324, 56);
+            this.btnlogout.TabIndex = 8;
+            this.btnlogout.Text = "Log Out";
+            this.btnlogout.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
-            // guna2Button6
+            // btnsellmedicne
             // 
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button6.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.guna2Button6.HoverState.FillColor = System.Drawing.Color.Peru;
-            this.guna2Button6.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button6.Image")));
-            this.guna2Button6.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button6.Location = new System.Drawing.Point(3, 631);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.Size = new System.Drawing.Size(324, 56);
-            this.guna2Button6.TabIndex = 7;
-            this.guna2Button6.Text = "Sell Medicine";
+            this.btnsellmedicne.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnsellmedicne.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnsellmedicne.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnsellmedicne.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnsellmedicne.FillColor = System.Drawing.Color.Transparent;
+            this.btnsellmedicne.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnsellmedicne.ForeColor = System.Drawing.Color.White;
+            this.btnsellmedicne.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.btnsellmedicne.HoverState.FillColor = System.Drawing.Color.Peru;
+            this.btnsellmedicne.Image = ((System.Drawing.Image)(resources.GetObject("btnsellmedicne.Image")));
+            this.btnsellmedicne.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnsellmedicne.Location = new System.Drawing.Point(3, 631);
+            this.btnsellmedicne.Name = "btnsellmedicne";
+            this.btnsellmedicne.Size = new System.Drawing.Size(324, 56);
+            this.btnsellmedicne.TabIndex = 7;
+            this.btnsellmedicne.Text = "Sell Medicine";
+            this.btnsellmedicne.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
-            // guna2Button5
+            // btnmedicinevaliditycheck
             // 
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.guna2Button5.HoverState.FillColor = System.Drawing.Color.Peru;
-            this.guna2Button5.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button5.Image")));
-            this.guna2Button5.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button5.Location = new System.Drawing.Point(3, 552);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(324, 56);
-            this.guna2Button5.TabIndex = 6;
-            this.guna2Button5.Text = "Medicine Validity Check";
+            this.btnmedicinevaliditycheck.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnmedicinevaliditycheck.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnmedicinevaliditycheck.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnmedicinevaliditycheck.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnmedicinevaliditycheck.FillColor = System.Drawing.Color.Transparent;
+            this.btnmedicinevaliditycheck.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnmedicinevaliditycheck.ForeColor = System.Drawing.Color.White;
+            this.btnmedicinevaliditycheck.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.btnmedicinevaliditycheck.HoverState.FillColor = System.Drawing.Color.Peru;
+            this.btnmedicinevaliditycheck.Image = ((System.Drawing.Image)(resources.GetObject("btnmedicinevaliditycheck.Image")));
+            this.btnmedicinevaliditycheck.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnmedicinevaliditycheck.Location = new System.Drawing.Point(3, 552);
+            this.btnmedicinevaliditycheck.Name = "btnmedicinevaliditycheck";
+            this.btnmedicinevaliditycheck.Size = new System.Drawing.Size(324, 56);
+            this.btnmedicinevaliditycheck.TabIndex = 6;
+            this.btnmedicinevaliditycheck.Text = "Medicine Validity Check";
+            this.btnmedicinevaliditycheck.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
-            // guna2Button4
+            // btnaddmedicine
             // 
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.guna2Button4.HoverState.FillColor = System.Drawing.Color.Peru;
-            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
-            this.guna2Button4.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button4.Location = new System.Drawing.Point(3, 315);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(324, 56);
-            this.guna2Button4.TabIndex = 5;
-            this.guna2Button4.Text = "Add Medicine";
+            this.btnaddmedicine.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnaddmedicine.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnaddmedicine.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnaddmedicine.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnaddmedicine.FillColor = System.Drawing.Color.Transparent;
+            this.btnaddmedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnaddmedicine.ForeColor = System.Drawing.Color.White;
+            this.btnaddmedicine.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.btnaddmedicine.HoverState.FillColor = System.Drawing.Color.Peru;
+            this.btnaddmedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnaddmedicine.Image")));
+            this.btnaddmedicine.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnaddmedicine.Location = new System.Drawing.Point(3, 315);
+            this.btnaddmedicine.Name = "btnaddmedicine";
+            this.btnaddmedicine.Size = new System.Drawing.Size(324, 56);
+            this.btnaddmedicine.TabIndex = 5;
+            this.btnaddmedicine.Text = "Add Medicine";
+            this.btnaddmedicine.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // guna2Button3
+            // btnmodifymedicine
             // 
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.guna2Button3.HoverState.FillColor = System.Drawing.Color.Peru;
-            this.guna2Button3.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button3.Image")));
-            this.guna2Button3.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button3.Location = new System.Drawing.Point(3, 473);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(324, 56);
-            this.guna2Button3.TabIndex = 4;
-            this.guna2Button3.Text = "Modify Medicine";
+            this.btnmodifymedicine.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnmodifymedicine.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnmodifymedicine.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnmodifymedicine.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnmodifymedicine.FillColor = System.Drawing.Color.Transparent;
+            this.btnmodifymedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnmodifymedicine.ForeColor = System.Drawing.Color.White;
+            this.btnmodifymedicine.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.btnmodifymedicine.HoverState.FillColor = System.Drawing.Color.Peru;
+            this.btnmodifymedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnmodifymedicine.Image")));
+            this.btnmodifymedicine.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnmodifymedicine.Location = new System.Drawing.Point(3, 473);
+            this.btnmodifymedicine.Name = "btnmodifymedicine";
+            this.btnmodifymedicine.Size = new System.Drawing.Size(324, 56);
+            this.btnmodifymedicine.TabIndex = 4;
+            this.btnmodifymedicine.Text = "Modify Medicine";
             // 
-            // guna2Button2
+            // btnviewmedicine
             // 
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.Peru;
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button2.Location = new System.Drawing.Point(3, 394);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(324, 56);
-            this.guna2Button2.TabIndex = 3;
-            this.guna2Button2.Text = "View Medicine";
+            this.btnviewmedicine.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnviewmedicine.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnviewmedicine.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnviewmedicine.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnviewmedicine.FillColor = System.Drawing.Color.Transparent;
+            this.btnviewmedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnviewmedicine.ForeColor = System.Drawing.Color.White;
+            this.btnviewmedicine.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.btnviewmedicine.HoverState.FillColor = System.Drawing.Color.Peru;
+            this.btnviewmedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnviewmedicine.Image")));
+            this.btnviewmedicine.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnviewmedicine.Location = new System.Drawing.Point(3, 394);
+            this.btnviewmedicine.Name = "btnviewmedicine";
+            this.btnviewmedicine.Size = new System.Drawing.Size(324, 56);
+            this.btnviewmedicine.TabIndex = 3;
+            this.btnviewmedicine.Text = "View Medicine";
+            this.btnviewmedicine.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // guna2Button1
+            // btndashbaord
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.Peru;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageSize = new System.Drawing.Size(35, 35);
-            this.guna2Button1.Location = new System.Drawing.Point(3, 236);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(324, 56);
-            this.guna2Button1.TabIndex = 2;
-            this.guna2Button1.Text = "Dashboard";
+            this.btndashbaord.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btndashbaord.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btndashbaord.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btndashbaord.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btndashbaord.FillColor = System.Drawing.Color.Transparent;
+            this.btndashbaord.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btndashbaord.ForeColor = System.Drawing.Color.White;
+            this.btndashbaord.HoverState.BorderColor = System.Drawing.Color.Black;
+            this.btndashbaord.HoverState.FillColor = System.Drawing.Color.Peru;
+            this.btndashbaord.Image = ((System.Drawing.Image)(resources.GetObject("btndashbaord.Image")));
+            this.btndashbaord.ImageSize = new System.Drawing.Size(35, 35);
+            this.btndashbaord.Location = new System.Drawing.Point(3, 236);
+            this.btndashbaord.Name = "btndashbaord";
+            this.btndashbaord.Size = new System.Drawing.Size(324, 56);
+            this.btndashbaord.TabIndex = 2;
+            this.btndashbaord.Text = "Dashboard";
+            this.btndashbaord.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // label1
             // 
@@ -223,6 +230,10 @@
             this.panel2.Size = new System.Drawing.Size(1104, 770);
             this.panel2.TabIndex = 1;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this.panel2;
+            // 
             // Pharmacist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -243,15 +254,16 @@
         #endregion
 
         private Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnlogout;
+        private Guna.UI2.WinForms.Guna2Button btnsellmedicne;
+        private Guna.UI2.WinForms.Guna2Button btnmedicinevaliditycheck;
+        private Guna.UI2.WinForms.Guna2Button btnaddmedicine;
+        private Guna.UI2.WinForms.Guna2Button btnmodifymedicine;
+        private Guna.UI2.WinForms.Guna2Button btnviewmedicine;
+        private Guna.UI2.WinForms.Guna2Button btndashbaord;
         private Label label1;
         private PictureBox pictureBox1;
         private Panel panel2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }
