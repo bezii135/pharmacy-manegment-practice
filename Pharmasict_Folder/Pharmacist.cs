@@ -27,25 +27,67 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+            uC_P_Dashboard1.Visible = true;
+            uC_P_Dashboard1.BringToFront();
         }
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-
+            uC_P_AddMedicine1.Visible = true;
+            uC_P_AddMedicine1.BringToFront();
         }
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
-
+            uC_Sell_Medicine1.Visible = true;
+            uC_Sell_Medicine1.BringToFront();
         }
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
-
+            uC_ValidtyCheck1.Visible = true;
+            uC_ValidtyCheck1.BringToFront();
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            uC_VewMedicine1.Visible = true;
+            uC_VewMedicine1.BringToFront();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Pharmacist_Load(object sender, EventArgs e)
+        {
+            uC_P_Dashboard1.Visible = false;
+            uC_P_AddMedicine1.Visible = false;
+            uC_VewMedicine1.Visible = false;
+            uC_UpdateMedicine1.Visible = false;
+            uC_ValidtyCheck1.Visible = false;
+            uC_Sell_Medicine1.Visible = false;
+
+        }
+
+        private void btnmodifymedicine_Click(object sender, EventArgs e)
+        {
+            uC_UpdateMedicine1.Visible = true;
+            uC_UpdateMedicine1.BringToFront();
+        }
+
+        private void uC_Sell_Medicine1_KeyPress(object sender, KeyPressEventArgs e)
         {
 
         }

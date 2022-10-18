@@ -33,20 +33,20 @@
             this.Dashboard = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.AdminLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.PharmLabel = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
+            this.CustLabel = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -78,7 +78,7 @@
             // 
             this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.AdminLabel);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label4);
@@ -89,15 +89,16 @@
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
-            // label8
+            // AdminLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(83, 582);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(53, 39);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "59";
+            this.AdminLabel.AutoSize = true;
+            this.AdminLabel.BackColor = System.Drawing.Color.White;
+            this.AdminLabel.Location = new System.Drawing.Point(83, 582);
+            this.AdminLabel.Name = "AdminLabel";
+            this.AdminLabel.Size = new System.Drawing.Size(35, 39);
+            this.AdminLabel.TabIndex = 4;
+            this.AdminLabel.Text = "0";
+            this.AdminLabel.Click += new System.EventHandler(this.AdminLabel_Click);
             // 
             // label7
             // 
@@ -145,7 +146,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.PharmLabel);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label9);
@@ -157,15 +158,16 @@
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // label12
+            // PharmLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(117, 581);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(53, 39);
-            this.label12.TabIndex = 6;
-            this.label12.Text = "59";
+            this.PharmLabel.AutoSize = true;
+            this.PharmLabel.BackColor = System.Drawing.Color.White;
+            this.PharmLabel.Location = new System.Drawing.Point(117, 581);
+            this.PharmLabel.Name = "PharmLabel";
+            this.PharmLabel.Size = new System.Drawing.Size(35, 39);
+            this.PharmLabel.TabIndex = 6;
+            this.PharmLabel.Text = "0";
+            this.PharmLabel.Click += new System.EventHandler(this.PharmLabel_Click);
             // 
             // label11
             // 
@@ -224,7 +226,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel3.Controls.Add(this.label15);
+            this.panel3.Controls.Add(this.CustLabel);
             this.panel3.Controls.Add(this.label14);
             this.panel3.Controls.Add(this.label13);
             this.panel3.Controls.Add(this.label3);
@@ -234,16 +236,17 @@
             this.panel3.Size = new System.Drawing.Size(308, 639);
             this.panel3.TabIndex = 3;
             // 
-            // label15
+            // CustLabel
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(118, 582);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(53, 39);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "59";
+            this.CustLabel.AutoSize = true;
+            this.CustLabel.BackColor = System.Drawing.Color.White;
+            this.CustLabel.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CustLabel.Location = new System.Drawing.Point(118, 582);
+            this.CustLabel.Name = "CustLabel";
+            this.CustLabel.Size = new System.Drawing.Size(35, 39);
+            this.CustLabel.TabIndex = 7;
+            this.CustLabel.Text = "0";
+            this.CustLabel.Click += new System.EventHandler(this.CustLabel_Click);
             // 
             // label14
             // 
@@ -272,9 +275,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(25, 19);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 32);
+            this.label3.Size = new System.Drawing.Size(112, 32);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Customer";
+            this.label3.Text = "Cashier";
             // 
             // pictureBox1
             // 
@@ -285,6 +288,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // guna2Button1
             // 
@@ -304,6 +308,7 @@
             this.guna2Button1.PressedColor = System.Drawing.Color.White;
             this.guna2Button1.Size = new System.Drawing.Size(34, 35);
             this.guna2Button1.TabIndex = 5;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // UC_Dashboard
             // 
@@ -319,6 +324,7 @@
             this.Margin = new System.Windows.Forms.Padding(8, 6, 8, 6);
             this.Name = "UC_Dashboard";
             this.Size = new System.Drawing.Size(1014, 770);
+            this.Load += new System.EventHandler(this.UC_Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -344,14 +350,14 @@
         private Label label4;
         private Label label1;
         private Label label6;
-        private Label label8;
+        private Label AdminLabel;
         private Label label7;
         private Label label9;
         private Label label13;
-        private Label label12;
+        private Label PharmLabel;
         private Label label11;
         private Label label10;
-        private Label label15;
+        private Label CustLabel;
         private Label label14;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private PictureBox pictureBox1;

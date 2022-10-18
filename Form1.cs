@@ -1,9 +1,12 @@
 using pharmacy_manegment_practice.Pharmasict_Folder;
+using System.Data;
 
 namespace pharmacy_manegment_practice
 {
     public partial class Form1 : Form
     {
+        function fn = new function();
+        string query;
         public object MessageBoxIcons { get; private set; }
 
         public Form1()
@@ -54,13 +57,13 @@ namespace pharmacy_manegment_practice
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            if(txtusername.Text=="Beza"  &&  txtpassword.Text=="pass")
+            if (txtusername.Text == "Beza" && txtpassword.Text == "pass")
             {
                 Administrator am = new Administrator();
                 am.Show();
                 this.Hide();
             }
-            else if(txtusername.Text=="Birukti"&& txtpassword.Text == "pass")
+            else if (txtusername.Text == "Birukti" && txtpassword.Text == "pass")
             {
                 Pharmacist am = new Pharmacist();
                 am.Show();
@@ -68,8 +71,53 @@ namespace pharmacy_manegment_practice
             }
             else
             {
-                DialogResult dialogResult = MessageBox.Show("Wrong  Username OR Password " ,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                DialogResult dialogResult = MessageBox.Show("Wrong  Username OR Password ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+
+
+            /* query = "select * from users";
+             DataSet ds = fn.GetData(query);
+
+            if (ds.Tables[0].Rows.Count == 0)
+            {
+                 if (txtusername.Text == "Beza" && txtpassword.Text == "pass")
+                 {
+                     Administrator admin = new Administrator();
+                     admin.Show();
+                     this.Hide();
+                 }
+
+                if (ds.Tables[0].Rows.Count == 0)
+             {
+                     query = "select * from users where username='" + txtusername.Text + "' and pass='" + txtpassword.Text + "''";
+                     ds = fn.GetData(query);
+                     if (ds.Tables[0].Rows.Count != 0)
+                     {
+                         String role = ds.Tables[0].Rows[0][1].ToString();
+                         if (role == "Administrator")
+                         {
+                             Administrator admin = new Administrator(txtusername.Text);
+                             admin.Show();
+                             this.Hide();
+                         }
+
+                         else if (role == "Pharmacist" )
+                         {
+                             Pharmacist pharm = new Pharmacist();
+                             pharm.Show();
+                             this.Hide();
+                         }
+                     }
+
+                     else
+                     {
+                         MessageBox.Show("Wrong Username OR Password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                     }
+                 }
+             }
+
+        */
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

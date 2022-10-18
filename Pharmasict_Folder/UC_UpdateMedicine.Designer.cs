@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_UpdateMedicine));
             this.btnReset = new Guna.UI2.WinForms.Guna2Button();
             this.dtpManufacturing = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
+            this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.dtpExpireDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
@@ -50,6 +51,7 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.SuspendLayout();
             // 
             // btnReset
@@ -94,23 +96,24 @@
             this.label8.TabIndex = 31;
             this.label8.Text = "Manufacturing Date";
             // 
-            // btnAdd
+            // btnUpdate
             // 
-            this.btnAdd.BorderRadius = 16;
-            this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
-            this.btnAdd.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnAdd.Location = new System.Drawing.Point(626, 590);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(140, 49);
-            this.btnAdd.TabIndex = 30;
-            this.btnAdd.Text = "Update";
+            this.btnUpdate.BorderRadius = 16;
+            this.btnUpdate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnUpdate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnUpdate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnUpdate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdate.ForeColor = System.Drawing.Color.White;
+            this.btnUpdate.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.Image")));
+            this.btnUpdate.ImageSize = new System.Drawing.Size(35, 35);
+            this.btnUpdate.Location = new System.Drawing.Point(626, 590);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(140, 49);
+            this.btnUpdate.TabIndex = 30;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // dtpExpireDate
             // 
@@ -133,6 +136,7 @@
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(457, 32);
             this.txtQuantity.TabIndex = 28;
+            this.txtQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
             // 
             // txtPrice
             // 
@@ -141,6 +145,7 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(472, 34);
             this.txtPrice.TabIndex = 27;
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // txtMedName
             // 
@@ -149,6 +154,7 @@
             this.txtMedName.Name = "txtMedName";
             this.txtMedName.Size = new System.Drawing.Size(338, 32);
             this.txtMedName.TabIndex = 26;
+            this.txtMedName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedName_KeyPress);
             // 
             // txtMedNumber
             // 
@@ -157,6 +163,7 @@
             this.txtMedNumber.Name = "txtMedNumber";
             this.txtMedNumber.Size = new System.Drawing.Size(338, 32);
             this.txtMedNumber.TabIndex = 25;
+            this.txtMedNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedNumber_KeyPress);
             // 
             // txtMedID
             // 
@@ -165,6 +172,7 @@
             this.txtMedID.Name = "txtMedID";
             this.txtMedID.Size = new System.Drawing.Size(338, 32);
             this.txtMedID.TabIndex = 24;
+            this.txtMedID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedID_KeyPress);
             // 
             // label7
             // 
@@ -230,7 +238,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(109, 60);
+            this.label1.Location = new System.Drawing.Point(111, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(268, 37);
             this.label1.TabIndex = 17;
@@ -252,6 +260,7 @@
             this.Search.Size = new System.Drawing.Size(112, 29);
             this.Search.TabIndex = 34;
             this.Search.Text = "Search";
+            this.Search.Click += new System.EventHandler(this.Search_Click);
             // 
             // guna2GradientPanel1
             // 
@@ -282,6 +291,10 @@
             this.textBox1.Text = "0";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // UC_UpdateMedicine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -293,7 +306,7 @@
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.dtpManufacturing);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.dtpExpireDate);
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.txtPrice);
@@ -309,6 +322,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_UpdateMedicine";
             this.Size = new System.Drawing.Size(1104, 770);
+            this.Load += new System.EventHandler(this.UC_UpdateMedicine_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,7 +333,7 @@
         private Guna.UI2.WinForms.Guna2Button btnReset;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpManufacturing;
         private Label label8;
-        private Guna.UI2.WinForms.Guna2Button btnAdd;
+        private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpExpireDate;
         private TextBox txtQuantity;
         private TextBox txtPrice;
@@ -337,5 +351,6 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Label label9;
         private TextBox textBox1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

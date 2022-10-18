@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_P_AddMedicine));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,6 +47,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.dtpManufacturing = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnReset = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -125,6 +127,8 @@
             this.txtMedID.Name = "txtMedID";
             this.txtMedID.Size = new System.Drawing.Size(278, 45);
             this.txtMedID.TabIndex = 7;
+            this.txtMedID.TextChanged += new System.EventHandler(this.txtMedID_TextChanged);
+            this.txtMedID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedID_KeyPress);
             // 
             // txtMedNumber
             // 
@@ -133,6 +137,8 @@
             this.txtMedNumber.Name = "txtMedNumber";
             this.txtMedNumber.Size = new System.Drawing.Size(278, 45);
             this.txtMedNumber.TabIndex = 8;
+            this.txtMedNumber.TextChanged += new System.EventHandler(this.txtMedNumber_TextChanged);
+            this.txtMedNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedNumber_KeyPress);
             // 
             // txtMedName
             // 
@@ -141,6 +147,8 @@
             this.txtMedName.Name = "txtMedName";
             this.txtMedName.Size = new System.Drawing.Size(278, 45);
             this.txtMedName.TabIndex = 9;
+            this.txtMedName.TextChanged += new System.EventHandler(this.txtMedName_TextChanged);
+            this.txtMedName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedName_KeyPress);
             // 
             // txtPrice
             // 
@@ -149,6 +157,8 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(278, 45);
             this.txtPrice.TabIndex = 10;
+            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // txtQuantity
             // 
@@ -157,6 +167,7 @@
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(278, 45);
             this.txtQuantity.TabIndex = 11;
+            this.txtQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
             // 
             // dtpExpireDate
             // 
@@ -171,6 +182,7 @@
             this.dtpExpireDate.Size = new System.Drawing.Size(278, 45);
             this.dtpExpireDate.TabIndex = 12;
             this.dtpExpireDate.Value = new System.DateTime(2022, 10, 11, 5, 55, 20, 354);
+            this.dtpExpireDate.ValueChanged += new System.EventHandler(this.dtpExpireDate_ValueChanged);
             // 
             // btnAdd
             // 
@@ -189,6 +201,7 @@
             this.btnAdd.Size = new System.Drawing.Size(140, 49);
             this.btnAdd.TabIndex = 13;
             this.btnAdd.Text = "Add";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label8
             // 
@@ -213,6 +226,7 @@
             this.dtpManufacturing.Size = new System.Drawing.Size(278, 45);
             this.dtpManufacturing.TabIndex = 15;
             this.dtpManufacturing.Value = new System.DateTime(2022, 10, 11, 5, 55, 20, 354);
+            this.dtpManufacturing.ValueChanged += new System.EventHandler(this.dtpManufacturing_ValueChanged);
             // 
             // btnReset
             // 
@@ -232,6 +246,10 @@
             this.btnReset.TabIndex = 16;
             this.btnReset.Text = "Reset";
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
             // 
             // UC_P_AddMedicine
             // 
@@ -257,6 +275,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_P_AddMedicine";
             this.Size = new System.Drawing.Size(1104, 770);
+            this.Load += new System.EventHandler(this.UC_P_AddMedicine_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,5 +300,6 @@
         private Label label8;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpManufacturing;
         private Guna.UI2.WinForms.Guna2Button btnReset;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

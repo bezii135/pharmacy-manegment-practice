@@ -15,10 +15,10 @@ namespace pharmacy_manegment_practice
      class function
     {
 
-        protected SqlConnetion getConnection()
+        protected SqlConnection getConnection()
         {
-            SqlConnetion con = new SqlConnetion();
-            con.ConnectionString = "data source= DESKTOP-FGMMT0G\\MSSQLSERVER01; database=pharmacy; Integrated security=true";
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = "data source= DESKTOP-FGMMT0G\\MSSQLSERVER01; database=Admin; Integrated security=true";
             return con;
 
         }
@@ -26,10 +26,6 @@ namespace pharmacy_manegment_practice
 
         public DataSet GetData(String query)
         {
-            SqlConnetion con = getConnection();
-            SqlCommand cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = query;
             SqlConnection con = getConnection();
             SqlCommand cmd = new SqlCommand();
             cmd.Connection = con;
@@ -54,4 +50,4 @@ namespace pharmacy_manegment_practice
         }
     }
 }
-}
+

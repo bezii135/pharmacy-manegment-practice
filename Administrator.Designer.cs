@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administrator));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.userNameLabel = new System.Windows.Forms.Label();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogout = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -40,7 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.uC_Profile1 = new pharmacy_manegment_practice.UC_Profile();
+            this.uC_Profile1 = new pharmacy_manegment_practice.uC_Profile();
             this.uC_ViewUser1 = new pharmacy_manegment_practice.UC_ViewUser();
             this.uC_AddUser1 = new pharmacy_manegment_practice.UC_AddUser();
             this.uC_Dashboard1 = new pharmacy_manegment_practice.UC_Dashboard();
@@ -58,7 +58,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.userNameLabel);
             this.panel1.Controls.Add(this.guna2Button4);
             this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.guna2Button3);
@@ -72,16 +72,17 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label2
+            // userNameLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(192, 703);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 28);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Beza";
+            this.userNameLabel.AutoSize = true;
+            this.userNameLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.userNameLabel.ForeColor = System.Drawing.Color.Yellow;
+            this.userNameLabel.Location = new System.Drawing.Point(192, 703);
+            this.userNameLabel.Name = "userNameLabel";
+            this.userNameLabel.Size = new System.Drawing.Size(52, 28);
+            this.userNameLabel.TabIndex = 7;
+            this.userNameLabel.Text = "Beza";
+            this.userNameLabel.Click += new System.EventHandler(this.userNameLabel_Click);
             // 
             // guna2Button4
             // 
@@ -228,11 +229,12 @@
             this.uC_Profile1.Name = "uC_Profile1";
             this.uC_Profile1.Size = new System.Drawing.Size(1335, 860);
             this.uC_Profile1.TabIndex = 3;
+            this.uC_Profile1.Load += new System.EventHandler(this.uC_Profile1_Load);
             // 
             // uC_ViewUser1
             // 
             this.uC_ViewUser1.BackColor = System.Drawing.Color.White;
-            this.uC_ViewUser1.Location = new System.Drawing.Point(-14, -5);
+            this.uC_ViewUser1.Location = new System.Drawing.Point(3, -5);
             this.uC_ViewUser1.Name = "uC_ViewUser1";
             this.uC_ViewUser1.Size = new System.Drawing.Size(1279, 816);
             this.uC_ViewUser1.TabIndex = 2;
@@ -240,7 +242,7 @@
             // uC_AddUser1
             // 
             this.uC_AddUser1.BackColor = System.Drawing.Color.White;
-            this.uC_AddUser1.Location = new System.Drawing.Point(0, -5);
+            this.uC_AddUser1.Location = new System.Drawing.Point(-27, -27);
             this.uC_AddUser1.Name = "uC_AddUser1";
             this.uC_AddUser1.Size = new System.Drawing.Size(1448, 962);
             this.uC_AddUser1.TabIndex = 1;
@@ -311,7 +313,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button Dash_board;
-        private Label label2;
+        private Label userNameLabel;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
         private UC_Dashboard uC_Dashboard1;
@@ -321,6 +323,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private UC_ViewUser uC_ViewUser1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
-        private UC_Profile uC_Profile1;
+        private uC_Profile uC_Profile1;
     }
 }

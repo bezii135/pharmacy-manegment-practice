@@ -14,10 +14,35 @@ namespace pharmacy_manegment_practice
     {
         private object menuStrip1;
         private object btnDashbord;
+        String user = "";
 
         public Administrator()
         {   
             InitializeComponent();
+           
+        }
+
+
+
+        public String ID
+        {
+            get { return user.ToString(); }
+        }
+
+
+        public Administrator(String username)
+        {
+            InitializeComponent();
+            userNameLabel.Text = username;
+            user = username;
+            uC_ViewUser1.ID = ID;
+            uC_Profile1.ID = ID;
+        }
+
+        public String x(String username)
+        {
+            String v = username;
+            return v;
         }
 
         private void Administrator_Load(object sender, EventArgs e)
@@ -148,43 +173,15 @@ namespace pharmacy_manegment_practice
 
 
 
+        }
 
+        private void uC_Profile1_Load(object sender, EventArgs e)
+        {
 
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        private void userNameLabel_Click(object sender, EventArgs e)
+        {
 
         }
     }

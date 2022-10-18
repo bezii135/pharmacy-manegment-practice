@@ -41,9 +41,22 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.uC_ValidtyCheck1 = new pharmacy_manegment_practice.Pharmasict_Folder.UC_ValidtyCheck();
+            this.uC_UpdateMedicine1 = new pharmacy_manegment_practice.Pharmasict_Folder.UC_UpdateMedicine();
+            this.uC_VewMedicine1 = new pharmacy_manegment_practice.Pharmasict_Folder.UC_VewMedicine();
+            this.uC_P_AddMedicine1 = new pharmacy_manegment_practice.Pharmasict_Folder.UC_P_AddMedicine();
+            this.uC_P_Dashboard1 = new pharmacy_manegment_practice.Pharmasict_Folder.UC_P_Dashboard();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
+            this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.uC_Sell_Medicine1 = new pharmacy_manegment_practice.Pharmasict_Folder.UC_Sell_Medicine();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,6 +76,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(327, 782);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnlogout
             // 
@@ -162,6 +176,7 @@
             this.btnmodifymedicine.Size = new System.Drawing.Size(324, 56);
             this.btnmodifymedicine.TabIndex = 4;
             this.btnmodifymedicine.Text = "Modify Medicine";
+            this.btnmodifymedicine.Click += new System.EventHandler(this.btnmodifymedicine_Click);
             // 
             // btnviewmedicine
             // 
@@ -222,31 +237,107 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(333, 3);
+            this.panel2.Controls.Add(this.uC_ValidtyCheck1);
+            this.panel2.Controls.Add(this.uC_UpdateMedicine1);
+            this.panel2.Controls.Add(this.uC_VewMedicine1);
+            this.panel2.Controls.Add(this.uC_P_AddMedicine1);
+            this.panel2.Controls.Add(this.uC_P_Dashboard1);
+            this.panel2.Location = new System.Drawing.Point(325, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1104, 770);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // uC_ValidtyCheck1
+            // 
+            this.uC_ValidtyCheck1.Location = new System.Drawing.Point(0, 0);
+            this.uC_ValidtyCheck1.Name = "uC_ValidtyCheck1";
+            this.uC_ValidtyCheck1.Size = new System.Drawing.Size(1380, 962);
+            this.uC_ValidtyCheck1.TabIndex = 4;
+            // 
+            // uC_UpdateMedicine1
+            // 
+            this.uC_UpdateMedicine1.Location = new System.Drawing.Point(0, 0);
+            this.uC_UpdateMedicine1.Name = "uC_UpdateMedicine1";
+            this.uC_UpdateMedicine1.Size = new System.Drawing.Size(1380, 962);
+            this.uC_UpdateMedicine1.TabIndex = 3;
+            // 
+            // uC_VewMedicine1
+            // 
+            this.uC_VewMedicine1.Location = new System.Drawing.Point(0, 0);
+            this.uC_VewMedicine1.Name = "uC_VewMedicine1";
+            this.uC_VewMedicine1.Size = new System.Drawing.Size(1380, 962);
+            this.uC_VewMedicine1.TabIndex = 2;
+            // 
+            // uC_P_AddMedicine1
+            // 
+            this.uC_P_AddMedicine1.BackColor = System.Drawing.Color.White;
+            this.uC_P_AddMedicine1.Location = new System.Drawing.Point(0, 0);
+            this.uC_P_AddMedicine1.Name = "uC_P_AddMedicine1";
+            this.uC_P_AddMedicine1.Size = new System.Drawing.Size(1380, 962);
+            this.uC_P_AddMedicine1.TabIndex = 1;
+            // 
+            // uC_P_Dashboard1
+            // 
+            this.uC_P_Dashboard1.BackColor = System.Drawing.Color.White;
+            this.uC_P_Dashboard1.Location = new System.Drawing.Point(0, 0);
+            this.uC_P_Dashboard1.Name = "uC_P_Dashboard1";
+            this.uC_P_Dashboard1.Size = new System.Drawing.Size(1380, 962);
+            this.uC_P_Dashboard1.TabIndex = 0;
             // 
             // guna2Elipse1
             // 
             this.guna2Elipse1.TargetControl = this.panel2;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.TargetControl = this.panel2;
+            // 
+            // guna2Elipse3
+            // 
+            this.guna2Elipse3.TargetControl = this.panel2;
+            // 
+            // guna2Elipse4
+            // 
+            this.guna2Elipse4.TargetControl = this.panel2;
+            // 
+            // guna2Elipse5
+            // 
+            this.guna2Elipse5.TargetControl = this.panel2;
+            // 
+            // guna2Elipse6
+            // 
+            this.guna2Elipse6.TargetControl = this.panel2;
+            // 
+            // uC_Sell_Medicine1
+            // 
+            this.uC_Sell_Medicine1.BackColor = System.Drawing.Color.White;
+            this.uC_Sell_Medicine1.Location = new System.Drawing.Point(325, 0);
+            this.uC_Sell_Medicine1.Name = "uC_Sell_Medicine1";
+            this.uC_Sell_Medicine1.Size = new System.Drawing.Size(1117, 962);
+            this.uC_Sell_Medicine1.TabIndex = 2;
+            this.uC_Sell_Medicine1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.uC_Sell_Medicine1_KeyPress);
             // 
             // Pharmacist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1441, 782);
+            this.Controls.Add(this.uC_Sell_Medicine1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Pharmacist";
             this.Text = "Pharmacist";
+            this.Load += new System.EventHandler(this.Pharmacist_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -265,5 +356,17 @@
         private PictureBox pictureBox1;
         private Panel panel2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private UC_P_Dashboard uC_P_Dashboard1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private UC_P_AddMedicine uC_P_AddMedicine1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
+        private UC_VewMedicine uC_VewMedicine1;
+        private UC_UpdateMedicine uC_UpdateMedicine1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private UC_ValidtyCheck uC_ValidtyCheck1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
+        private UC_Sell_Medicine uC_Sell_Medicine1;
     }
 }

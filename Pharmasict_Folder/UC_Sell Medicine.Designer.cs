@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_Sell_Medicine));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -57,6 +58,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -102,6 +104,7 @@
             this.btnAdd.Size = new System.Drawing.Size(213, 26);
             this.btnAdd.TabIndex = 30;
             this.btnAdd.Text = "Add To Chart";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // dtpExpireDate
             // 
@@ -116,6 +119,7 @@
             this.dtpExpireDate.Size = new System.Drawing.Size(247, 26);
             this.dtpExpireDate.TabIndex = 29;
             this.dtpExpireDate.Value = new System.DateTime(2022, 10, 11, 5, 55, 20, 354);
+            this.dtpExpireDate.ValueChanged += new System.EventHandler(this.dtpExpireDate_ValueChanged);
             // 
             // txtQuantity
             // 
@@ -124,6 +128,8 @@
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(247, 26);
             this.txtQuantity.TabIndex = 28;
+            this.txtQuantity.TextChanged += new System.EventHandler(this.txtQuantity_TextChanged);
+            this.txtQuantity.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtQuantity_KeyPress);
             // 
             // txtPrice
             // 
@@ -132,6 +138,8 @@
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(247, 26);
             this.txtPrice.TabIndex = 27;
+            this.txtPrice.TextChanged += new System.EventHandler(this.txtPrice_TextChanged);
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
             // 
             // txtMedName
             // 
@@ -140,6 +148,7 @@
             this.txtMedName.Name = "txtMedName";
             this.txtMedName.Size = new System.Drawing.Size(247, 26);
             this.txtMedName.TabIndex = 26;
+            this.txtMedName.TextChanged += new System.EventHandler(this.txtMedName_TextChanged);
             // 
             // txtMedNumber
             // 
@@ -148,6 +157,8 @@
             this.txtMedNumber.Name = "txtMedNumber";
             this.txtMedNumber.Size = new System.Drawing.Size(247, 26);
             this.txtMedNumber.TabIndex = 25;
+            this.txtMedNumber.TextChanged += new System.EventHandler(this.txtMedNumber_TextChanged);
+            this.txtMedNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedNumber_KeyPress);
             // 
             // txtMedID
             // 
@@ -156,6 +167,8 @@
             this.txtMedID.Name = "txtMedID";
             this.txtMedID.Size = new System.Drawing.Size(247, 26);
             this.txtMedID.TabIndex = 24;
+            this.txtMedID.TextChanged += new System.EventHandler(this.txtMedID_TextChanged);
+            this.txtMedID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedID_KeyPress);
             // 
             // label7
             // 
@@ -235,6 +248,8 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(378, 604);
             this.listBox1.TabIndex = 34;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.listBox1_KeyPress);
             // 
             // label9
             // 
@@ -252,6 +267,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(378, 23);
             this.textBox1.TabIndex = 36;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // guna2DataGridView1
             // 
@@ -270,7 +286,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ColumnHeadersHeight = 4;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -300,7 +316,7 @@
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
             this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -310,6 +326,7 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 29;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
             // 
             // guna2Button1
             // 
@@ -374,6 +391,7 @@
             this.guna2Button3.PressedColor = System.Drawing.Color.White;
             this.guna2Button3.Size = new System.Drawing.Size(34, 35);
             this.guna2Button3.TabIndex = 42;
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // pictureBox1
             // 
@@ -384,6 +402,11 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 41;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.TargetControl = this;
             // 
             // UC_Sell_Medicine
             // 
@@ -417,6 +440,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_Sell_Medicine";
             this.Size = new System.Drawing.Size(1104, 770);
+            this.Load += new System.EventHandler(this.UC_Sell_Medicine_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -451,5 +475,6 @@
         private Label label10;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }
