@@ -15,9 +15,9 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
     {
 
 
-        //function fn = new function();
-        //String query;
-        //DataSet ds; Int64 count;
+        function fn = new function();
+        String query;
+        DataSet ds; Int64 count;
 
         public UC_Sell_Medicine()
         {
@@ -64,28 +64,29 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
         private void UC_Sell_Medicine_Load(object sender, EventArgs e)
         {
 
+            listBox1.Items.Clear();
+            query = "select mname from medic where eDate >= 'getdate()' and quantity >'0' ";
+            ds= fn.GetData(query);
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+            {
+                listBox1.Items.Add(ds.Tables[0].Rows[i][0].ToString()); 
 
-            //listBox1.Items.Clear();
-            //query = "select mname from medic where eDate>= getdate() and quantity>'0'";
-            //fn.GetData(query);
-
-            //for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
-            //{
-            //    listBox1.Items.Add(ds.Tables[0].Rows[i][0].ToString());
-            //}
             }
+
+
+
+        }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            //listBox1.Items.Clear();
-            //query = "select mname from medic where mname like '" + textBox1.Text + "%'and eDate>=getdate() and quantity>'0'";
-            //ds = fn.GetData(query);
+           listBox1.Items.Clear();
+            query = "select mname from medic where mname like '" + textBox1.Text + "%' and eDate>= 'getdate()' and quantity >'0'";
+            ds = fn.GetData(query);
+            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+            {
+                listBox1.Items.Add(ds.Tables[0].Rows[i][0].ToString());
 
-            //for (int i = 0; i<ds.Tables[0].Rows.Count; i++)
-            //{
-            //    listBox1.Items.Add(ds.Tables[0].Rows[i][0].ToString());
-            //}
-
+            }
         }
 
         private void txtNoOfUnits_TextChanged(object sender, EventArgs e)
@@ -139,32 +140,149 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
 
         private void txtQuantity_TextChanged(object sender, EventArgs e)
         {
+            if (txtQuantity.Text != "")
+            {
+                Int64 unitPrice= Int64.Parse(txtPrice.Text);
+                Int64 noOfUnit = Int64.Parse(txtQuantity.Text);
+                Int64 TotalAmount =unitPrice* noOfUnit;
+                txtTotalPrice.Text = TotalAmount.ToString();
+
+            }
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            Form1 fm = new Form1();
+            fm.Show();
+            this.Hide();
+        }
+        
+        private void listBox1_RightToLeftChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        int valueAmount;
+        String valueId;
+        protected Int64 noOfUnit;
+        private void gview_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                valueAmount = int.Parse(gview.Rows[e.RowIndex].Cells[5].Value.ToString());
+                valueId = gview.Rows[e.RowIndex].Cells[0].Value.ToString();
+                noOfUnit = Int64.Parse(gview.Rows[e.RowIndex].Cells[4].Value.ToString());
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+        protected int r, TotalAmount = 0;
+        protected Int64 Quantity, newquantity;
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            if (valueId != null)
+            {
+                try
+                {
+                    gview.Rows.RemoveAt(this.gview.SelectedRows[0].Index);
+                }
+                catch
+                {
+
+                }
+                finally
+                {
+                    query = "select quantity from medic where mid='" + valueId + "' ";
+                    ds = fn.GetData(query);
+                    quantity = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
+                    newquantity = quantity + noOfUnit;
+                    query = "upadate medic set quantity = '" + newquantity + "' where mid= '" + valueId + "'";
+                    fn.setData(query, "Medicine Removed From Cart");
+                    totalAmount = totalAmount - valueAmount;
+                    Totallabel.Text = "$. " + totalAmount.ToString();
+
+                }
+                UC_Sell_Medicine_Load(this, null);
+            }
 
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (txtMedID.Text != "")
+            {
+                query = " select quantity from medic where mid = '" + txtMedID.Text + "'";
+                ds= fn.GetData(query);
+                Quantity = Int64.Parse(ds.Tables[0].Rows[0][0].ToString());
+                newquantity=Quantity - Int64.Parse(txtQuantity.Text);
+                if (newquantity >= 0)
+                {
+                    r= gview.Rows.Add();
+                    gview.Rows[r].Cells[0].Value = txtMedID.Text;
+                    gview.Rows[r].Cells[1].Value = txtMedName.Text;
+                    gview.Rows[r].Cells[2].Value = dtpExpireDate.Text;
+                    gview.Rows[r].Cells[3].Value = txtPrice.Text;
+                    gview.Rows[r].Cells[4].Value = txtQuantity.Text;
+                    gview.Rows[r].Cells[5].Value = txtTotalPrice.Text;
 
+                    TotalAmount= TotalAmount+int.Parse(txtTotalPrice.Text);
+                    Totallabel.Text= "$. " + TotalAmount.ToString();
+                    query = "Update medic set quantity ='" + newQuantity + "' where mid= '" + txtMedID.Text + "'";
+                    fn.setData(query, "Medicinee Added.");
+
+                }
+                else
+                {
+                    MessageBox.Show("Medicine is Out of Stock.\n Only "+Quantity+"Left","Warning!!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+
+
+                }
+                UC_Sell_Medicine_Load(this, null);
+                clearAll();
+
+            }
+            else
+            {
+                MessageBox.Show("Select Medicine First.", "information !!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
            
+          
           
         
 
     }
 
-    private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void clearAll()
         {
+            txtMedID.Clear();
+            txtMedName.Clear();
+            dtpExpireDate.ResetText();
+            txtPrice.Clear();
+            txtQuantity.Clear();
 
-            //txtQuantity.Clear();
+        }
 
-            //String name = listBox1.GetItemText(listBox1.SelectedItems);
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            txtQuantity.Clear();
+            String Name = listBox1.GetItemText(listBox1.SelectedItem);
+            txtMedName.Text = Name;
+            query = "select mid,eDate,perUnit from medic where mname ='" + Name + "'";
+            ds = fn.GetData(query);
+            txtMedID.Text = ds.Tables[0].Rows[0][0].ToString();
+            dtpExpireDate.Text = ds.Tables[0].Rows[0][1].ToString();
+            txtPrice.Text = ds.Tables[0].Rows[0][2].ToString();
 
-            //txtMedName.Text = name;
-            //query = "select mid,eDate,perUnit from medic where mname='" + name + "'";
 
-            //ds=fn.GetData(query);
-            //txtMedID.Text = ds.Tables[0].Rows[0][0].ToString();
-            //dtpExpireDate.Text = ds.Tables[0].Rows[0][1].ToString();
-            //txtPrice.Text = ds.Tables[0].Rows[0][2].ToString();
+
 
 
         }

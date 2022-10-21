@@ -93,7 +93,7 @@
             this.btnexit.Image = ((System.Drawing.Image)(resources.GetObject("btnexit.Image")));
             this.btnexit.Location = new System.Drawing.Point(1363, 0);
             this.btnexit.Name = "btnexit";
-            this.btnexit.Size = new System.Drawing.Size(18, 48);
+            this.btnexit.Size = new System.Drawing.Size(18, 38);
             this.btnexit.TabIndex = 1;
             this.btnexit.Text = "EXIT";
             this.btnexit.Click += new System.EventHandler(this.guna2Button1_Click);
@@ -219,6 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1380, 768);
             this.Controls.Add(this.btnreset);
             this.Controls.Add(this.btnsignin);

@@ -37,11 +37,7 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
             uC_P_AddMedicine1.BringToFront();
         }
 
-        private void guna2Button6_Click(object sender, EventArgs e)
-        {
-            uC_Sell_Medicine1.Visible = true;
-            uC_Sell_Medicine1.BringToFront();
-        }
+        
 
         private void guna2Button5_Click(object sender, EventArgs e)
         {
@@ -77,7 +73,7 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
             uC_VewMedicine1.Visible = false;
             uC_UpdateMedicine1.Visible = false;
             uC_ValidtyCheck1.Visible = false;
-            uC_Sell_Medicine1.Visible = false;
+            
 
         }
 

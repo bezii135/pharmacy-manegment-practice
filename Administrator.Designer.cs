@@ -100,7 +100,7 @@
             this.guna2Button4.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button4.Location = new System.Drawing.Point(68, 472);
             this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(225, 56);
+            this.guna2Button4.Size = new System.Drawing.Size(331, 56);
             this.guna2Button4.TabIndex = 5;
             this.guna2Button4.Text = "Profile";
             this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
@@ -121,7 +121,7 @@
             this.btnLogout.ImageSize = new System.Drawing.Size(30, 30);
             this.btnLogout.Location = new System.Drawing.Point(68, 544);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(225, 56);
+            this.btnLogout.Size = new System.Drawing.Size(331, 56);
             this.btnLogout.TabIndex = 6;
             this.btnLogout.Text = "Logout";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -142,7 +142,7 @@
             this.guna2Button3.ImageSize = new System.Drawing.Size(30, 30);
             this.guna2Button3.Location = new System.Drawing.Point(68, 400);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(225, 56);
+            this.guna2Button3.Size = new System.Drawing.Size(331, 56);
             this.guna2Button3.TabIndex = 4;
             this.guna2Button3.Text = "View user ";
             this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
@@ -163,7 +163,7 @@
             this.guna2Button2.ImageSize = new System.Drawing.Size(40, 40);
             this.guna2Button2.Location = new System.Drawing.Point(68, 328);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(225, 56);
+            this.guna2Button2.Size = new System.Drawing.Size(331, 56);
             this.guna2Button2.TabIndex = 3;
             this.guna2Button2.Text = "Add user";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
@@ -184,7 +184,7 @@
             this.Dash_board.ImageSize = new System.Drawing.Size(30, 30);
             this.Dash_board.Location = new System.Drawing.Point(68, 251);
             this.Dash_board.Name = "Dash_board";
-            this.Dash_board.Size = new System.Drawing.Size(225, 56);
+            this.Dash_board.Size = new System.Drawing.Size(328, 56);
             this.Dash_board.TabIndex = 2;
             this.Dash_board.Text = "Dash board ";
             this.Dash_board.Click += new System.EventHandler(this.guna2Button1_Click);

@@ -81,7 +81,7 @@ namespace pharmacy_manegment_practice
 
         private void UC_Dashboard_Load(object sender, EventArgs e)
         {
-            query = "select count(userRole) from users where userRole='Administrator'";
+            query = "select count(userRole) from users where userRole='Adimistator'";
             ds = fn.GetData(query);
             setLabel(ds,AdminLabel);
            

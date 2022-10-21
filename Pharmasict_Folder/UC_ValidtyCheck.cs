@@ -32,21 +32,21 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            if (comboBox1.SelectedIndex == 0)
+            if (comboBox1.SelectedIndex == 1)
             {
-                query = "select * from medic where eDate >=getDate()";
+                query = "select * from medic where eDate >= 'getdate()'";
                 setDataGridView(query, "Valid Medicines", Color.Black);
 
             }
-            else if (comboBox1.SelectedIndex == 1)
-            {
-                query = "select * from medic where eDate <=getDate()";
-                setDataGridView(query, "Expired Medicines", Color.Red);
-            }
             else if (comboBox1.SelectedIndex == 2)
             {
+                query = "select * from medic where eDate <= 'getdate()'";
+                setDataGridView(query, "Expired Medicines", Color.Red);
+            }
+            else if (comboBox1.SelectedIndex == 0)
+            {
                 query = "select * from medic ";
-                setDataGridView(query, "", Color.Black);
+                setDataGridView(query,"", Color.Black);
 
             }
             else
@@ -61,16 +61,14 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
 
         private void setDataGridView(String query, String labelName, Color col)
         {
-
-
             DataSet ds = fn.GetData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
-            label2.Text = labelName;
-            //label2.ForeColor() = col;
+            label3.Text = labelName;
+            label3.ForeColor = col;
         }
         private void UC_P_MedicineValidityCheck_Load(object sender, EventArgs e)
         {
-            label2.Text = "";
+            label3.Text = "";
 
         }
 

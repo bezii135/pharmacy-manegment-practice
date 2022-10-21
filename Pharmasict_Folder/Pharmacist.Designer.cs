@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pharmacist));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnlogout = new Guna.UI2.WinForms.Guna2Button();
-            this.btnsellmedicne = new Guna.UI2.WinForms.Guna2Button();
             this.btnmedicinevaliditycheck = new Guna.UI2.WinForms.Guna2Button();
             this.btnaddmedicine = new Guna.UI2.WinForms.Guna2Button();
             this.btnmodifymedicine = new Guna.UI2.WinForms.Guna2Button();
@@ -52,8 +51,6 @@
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse5 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse6 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_Sell_Medicine1 = new pharmacy_manegment_practice.Pharmasict_Folder.UC_Sell_Medicine();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -63,7 +60,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Tan;
             this.panel1.Controls.Add(this.btnlogout);
-            this.panel1.Controls.Add(this.btnsellmedicne);
             this.panel1.Controls.Add(this.btnmedicinevaliditycheck);
             this.panel1.Controls.Add(this.btnaddmedicine);
             this.panel1.Controls.Add(this.btnmodifymedicine);
@@ -91,32 +87,12 @@
             this.btnlogout.HoverState.FillColor = System.Drawing.Color.Peru;
             this.btnlogout.Image = ((System.Drawing.Image)(resources.GetObject("btnlogout.Image")));
             this.btnlogout.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnlogout.Location = new System.Drawing.Point(3, 710);
+            this.btnlogout.Location = new System.Drawing.Point(3, 632);
             this.btnlogout.Name = "btnlogout";
             this.btnlogout.Size = new System.Drawing.Size(324, 56);
             this.btnlogout.TabIndex = 8;
             this.btnlogout.Text = "Log Out";
             this.btnlogout.Click += new System.EventHandler(this.guna2Button7_Click);
-            // 
-            // btnsellmedicne
-            // 
-            this.btnsellmedicne.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnsellmedicne.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnsellmedicne.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnsellmedicne.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnsellmedicne.FillColor = System.Drawing.Color.Transparent;
-            this.btnsellmedicne.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnsellmedicne.ForeColor = System.Drawing.Color.White;
-            this.btnsellmedicne.HoverState.BorderColor = System.Drawing.Color.Black;
-            this.btnsellmedicne.HoverState.FillColor = System.Drawing.Color.Peru;
-            this.btnsellmedicne.Image = ((System.Drawing.Image)(resources.GetObject("btnsellmedicne.Image")));
-            this.btnsellmedicne.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnsellmedicne.Location = new System.Drawing.Point(3, 631);
-            this.btnsellmedicne.Name = "btnsellmedicne";
-            this.btnsellmedicne.Size = new System.Drawing.Size(324, 56);
-            this.btnsellmedicne.TabIndex = 7;
-            this.btnsellmedicne.Text = "Sell Medicine";
-            this.btnsellmedicne.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // btnmedicinevaliditycheck
             // 
@@ -261,6 +237,7 @@
             // 
             // uC_UpdateMedicine1
             // 
+            this.uC_UpdateMedicine1.BackColor = System.Drawing.Color.White;
             this.uC_UpdateMedicine1.Location = new System.Drawing.Point(0, 0);
             this.uC_UpdateMedicine1.Name = "uC_UpdateMedicine1";
             this.uC_UpdateMedicine1.Size = new System.Drawing.Size(1380, 962);
@@ -309,25 +286,11 @@
             // 
             this.guna2Elipse5.TargetControl = this.panel2;
             // 
-            // guna2Elipse6
-            // 
-            this.guna2Elipse6.TargetControl = this.panel2;
-            // 
-            // uC_Sell_Medicine1
-            // 
-            this.uC_Sell_Medicine1.BackColor = System.Drawing.Color.White;
-            this.uC_Sell_Medicine1.Location = new System.Drawing.Point(325, 0);
-            this.uC_Sell_Medicine1.Name = "uC_Sell_Medicine1";
-            this.uC_Sell_Medicine1.Size = new System.Drawing.Size(1117, 962);
-            this.uC_Sell_Medicine1.TabIndex = 2;
-            this.uC_Sell_Medicine1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.uC_Sell_Medicine1_KeyPress);
-            // 
             // Pharmacist
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1441, 782);
-            this.Controls.Add(this.uC_Sell_Medicine1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -346,7 +309,6 @@
 
         private Panel panel1;
         private Guna.UI2.WinForms.Guna2Button btnlogout;
-        private Guna.UI2.WinForms.Guna2Button btnsellmedicne;
         private Guna.UI2.WinForms.Guna2Button btnmedicinevaliditycheck;
         private Guna.UI2.WinForms.Guna2Button btnaddmedicine;
         private Guna.UI2.WinForms.Guna2Button btnmodifymedicine;
@@ -366,7 +328,5 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
         private UC_ValidtyCheck uC_ValidtyCheck1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse5;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse6;
-        private UC_Sell_Medicine uC_Sell_Medicine1;
     }
 }

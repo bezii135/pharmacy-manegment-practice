@@ -38,11 +38,11 @@ namespace pharmacy_manegment_practice
             guna2DataGridView1.DataSource = ds.Tables[0];
 
         }
-        private void txtUserName_TextChanged(object sender, EventArgs e)
-        {
-            query = "select * from users where username like '" + txtUserName_View.Text + "%";//a%
-            guna2DataGridView1.DataSource = ds.Tables[0];
-        }
+        //private void txtUserName_TextChanged(object sender, EventArgs e)
+        //{
+        //    query = "select * from users where username like '" + txtUserName_View.Text + "%' ";//a%
+        //    guna2DataGridView1.DataSource = ds.Tables[0];
+        //}
 
 
         String userName;
@@ -76,7 +76,7 @@ namespace pharmacy_manegment_practice
 
                 if (currentUser != userName)
                 {
-                    query = "delete from users where username='" + userName + "'";
+                    query = "delete from users where username ='" + userName + "'";
                     fn.setData(query, "User Record Deleted.");
                     UC_ViewUser_Load(this, null);
                 }
@@ -96,7 +96,7 @@ namespace pharmacy_manegment_practice
 
         private void UC_ViewUser_Load_1(object sender, EventArgs e)
         {
-
+            
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -106,9 +106,9 @@ namespace pharmacy_manegment_practice
 
         private void txtUserName_View_TextChanged(object sender, EventArgs e)
         {
-            //query = "select * from users where mname like'" + txtUserName_View.Text + "%'";
-            //DataSet ds = fn.GetData(query);
-            //guna2DataGridView1.DataSource = ds.Tables[0];
+            query = "select * from users where mname like'" + txtUserName_View.Text + "%'";//a%
+            DataSet ds = fn.GetData(query);
+            guna2DataGridView1.DataSource = ds.Tables[0];
         }
 
         private void txtUserName_View_KeyPress(object sender, KeyPressEventArgs e)

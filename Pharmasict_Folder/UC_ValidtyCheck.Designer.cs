@@ -37,6 +37,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -123,7 +124,10 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "Veiw All medicine"});
+            "Veiw All Medicines",
+            "Valid Medicines",
+            "Expired Medicines",
+            "\t\t\t\t\t\t"});
             this.comboBox1.Location = new System.Drawing.Point(268, 130);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(664, 28);
@@ -134,10 +138,23 @@
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(78, 253);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 38);
+            this.label3.TabIndex = 13;
+            // 
             // UC_ValidtyCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.label2);
@@ -158,5 +175,6 @@
         private Label label1;
         private ComboBox comboBox1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Label label3;
     }
 }

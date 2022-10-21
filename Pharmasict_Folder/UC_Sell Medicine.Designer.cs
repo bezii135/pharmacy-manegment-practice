@@ -33,17 +33,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dtpManufacturing = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.dtpExpireDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.txtQuantity = new System.Windows.Forms.TextBox();
             this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtMedName = new System.Windows.Forms.TextBox();
-            this.txtMedNumber = new System.Windows.Forms.TextBox();
+            this.txtTotalPrice = new System.Windows.Forms.TextBox();
             this.txtMedID = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.totprice = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,40 +50,23 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.gview = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.label10 = new System.Windows.Forms.Label();
+            this.Totallabel = new System.Windows.Forms.Label();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            ((System.ComponentModel.ISupportInitialize)(this.gview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dtpManufacturing
-            // 
-            this.dtpManufacturing.Checked = true;
-            this.dtpManufacturing.FillColor = System.Drawing.Color.White;
-            this.dtpManufacturing.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dtpManufacturing.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpManufacturing.Location = new System.Drawing.Point(487, 357);
-            this.dtpManufacturing.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpManufacturing.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpManufacturing.Name = "dtpManufacturing";
-            this.dtpManufacturing.Size = new System.Drawing.Size(247, 26);
-            this.dtpManufacturing.TabIndex = 32;
-            this.dtpManufacturing.Value = new System.DateTime(2022, 10, 11, 5, 55, 20, 354);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(487, 325);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(158, 20);
-            this.label8.TabIndex = 31;
-            this.label8.Text = "Manufacturing Date";
             // 
             // btnAdd
             // 
@@ -99,7 +80,7 @@
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAdd.Location = new System.Drawing.Point(827, 357);
+            this.btnAdd.Location = new System.Drawing.Point(998, 350);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(213, 26);
             this.btnAdd.TabIndex = 30;
@@ -112,7 +93,7 @@
             this.dtpExpireDate.FillColor = System.Drawing.Color.White;
             this.dtpExpireDate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpExpireDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpExpireDate.Location = new System.Drawing.Point(827, 60);
+            this.dtpExpireDate.Location = new System.Drawing.Point(487, 264);
             this.dtpExpireDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpExpireDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpExpireDate.Name = "dtpExpireDate";
@@ -123,7 +104,7 @@
             // 
             // txtQuantity
             // 
-            this.txtQuantity.Location = new System.Drawing.Point(827, 158);
+            this.txtQuantity.Location = new System.Drawing.Point(804, 73);
             this.txtQuantity.Multiline = true;
             this.txtQuantity.Name = "txtQuantity";
             this.txtQuantity.Size = new System.Drawing.Size(247, 26);
@@ -133,7 +114,7 @@
             // 
             // txtPrice
             // 
-            this.txtPrice.Location = new System.Drawing.Point(827, 251);
+            this.txtPrice.Location = new System.Drawing.Point(804, 158);
             this.txtPrice.Multiline = true;
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(247, 26);
@@ -150,15 +131,15 @@
             this.txtMedName.TabIndex = 26;
             this.txtMedName.TextChanged += new System.EventHandler(this.txtMedName_TextChanged);
             // 
-            // txtMedNumber
+            // txtTotalPrice
             // 
-            this.txtMedNumber.Location = new System.Drawing.Point(487, 265);
-            this.txtMedNumber.Multiline = true;
-            this.txtMedNumber.Name = "txtMedNumber";
-            this.txtMedNumber.Size = new System.Drawing.Size(247, 26);
-            this.txtMedNumber.TabIndex = 25;
-            this.txtMedNumber.TextChanged += new System.EventHandler(this.txtMedNumber_TextChanged);
-            this.txtMedNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedNumber_KeyPress);
+            this.txtTotalPrice.Location = new System.Drawing.Point(804, 264);
+            this.txtTotalPrice.Multiline = true;
+            this.txtTotalPrice.Name = "txtTotalPrice";
+            this.txtTotalPrice.Size = new System.Drawing.Size(247, 26);
+            this.txtTotalPrice.TabIndex = 25;
+            this.txtTotalPrice.TextChanged += new System.EventHandler(this.txtMedNumber_TextChanged);
+            this.txtTotalPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMedNumber_KeyPress);
             // 
             // txtMedID
             // 
@@ -174,27 +155,27 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(487, 135);
+            this.label7.Location = new System.Drawing.Point(487, 120);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(127, 20);
             this.label7.TabIndex = 23;
             this.label7.Text = "Medicine Name";
             // 
-            // label6
+            // totprice
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(487, 228);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(141, 20);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Medicine Number";
+            this.totprice.AutoSize = true;
+            this.totprice.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.totprice.Location = new System.Drawing.Point(817, 211);
+            this.totprice.Name = "totprice";
+            this.totprice.Size = new System.Drawing.Size(83, 20);
+            this.totprice.TabIndex = 22;
+            this.totprice.Text = "Total Price";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(827, 228);
+            this.label5.Location = new System.Drawing.Point(827, 120);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 20);
             this.label5.TabIndex = 21;
@@ -204,7 +185,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(827, 135);
+            this.label4.Location = new System.Drawing.Point(827, 37);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(71, 20);
             this.label4.TabIndex = 20;
@@ -214,7 +195,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(827, 37);
+            this.label3.Location = new System.Drawing.Point(487, 211);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 20);
             this.label3.TabIndex = 19;
@@ -249,6 +230,7 @@
             this.listBox1.Size = new System.Drawing.Size(378, 604);
             this.listBox1.TabIndex = 34;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox1.RightToLeftChanged += new System.EventHandler(this.listBox1_RightToLeftChanged);
             this.listBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.listBox1_KeyPress);
             // 
             // label9
@@ -265,19 +247,19 @@
             this.textBox1.Location = new System.Drawing.Point(31, 99);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(378, 23);
+            this.textBox1.Size = new System.Drawing.Size(378, 31);
             this.textBox1.TabIndex = 36;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // guna2DataGridView1
+            // gview
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.guna2DataGridView1.BackgroundColor = System.Drawing.Color.DarkGray;
-            this.guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.gview.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gview.BackgroundColor = System.Drawing.Color.DarkGray;
+            this.gview.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gview.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -285,48 +267,92 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
+            this.gview.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.gview.ColumnHeadersHeight = 30;
+            this.gview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.EnableHeadersVisualStyles = false;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(434, 428);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.RowHeadersWidth = 51;
-            this.guna2DataGridView1.RowTemplate.Height = 29;
-            this.guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(640, 267);
-            this.guna2DataGridView1.TabIndex = 37;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.DarkGray;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 29;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
+            this.gview.DefaultCellStyle = dataGridViewCellStyle3;
+            this.gview.EnableHeadersVisualStyles = false;
+            this.gview.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gview.Location = new System.Drawing.Point(429, 426);
+            this.gview.Name = "gview";
+            this.gview.RowHeadersVisible = false;
+            this.gview.RowHeadersWidth = 51;
+            this.gview.RowTemplate.Height = 29;
+            this.gview.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gview.Size = new System.Drawing.Size(809, 267);
+            this.gview.TabIndex = 37;
+            this.gview.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.gview.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.gview.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.gview.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.gview.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.gview.ThemeStyle.BackColor = System.Drawing.Color.DarkGray;
+            this.gview.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gview.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gview.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gview.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gview.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.gview.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.gview.ThemeStyle.HeaderStyle.Height = 30;
+            this.gview.ThemeStyle.ReadOnly = false;
+            this.gview.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.gview.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gview.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gview.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gview.ThemeStyle.RowsStyle.Height = 29;
+            this.gview.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gview.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gview.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gview_CellClick);
+            this.gview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
+            // 
+            // column1
+            // 
+            this.column1.HeaderText = "Medicine Id";
+            this.column1.MinimumWidth = 6;
+            this.column1.Name = "column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Expire Date";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Price per Unit";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Number Of Unit";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Total Price";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
             // 
             // guna2Button1
             // 
@@ -345,6 +371,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(213, 26);
             this.guna2Button1.TabIndex = 38;
             this.guna2Button1.Text = "Remove";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2
             // 
@@ -363,15 +390,17 @@
             this.guna2Button2.Size = new System.Drawing.Size(213, 26);
             this.guna2Button2.TabIndex = 39;
             this.guna2Button2.Text = "Purchase And Print";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // label10
+            // Totallabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.MistyRose;
-            this.label10.Location = new System.Drawing.Point(734, 730);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 20);
-            this.label10.TabIndex = 40;
+            this.Totallabel.AutoSize = true;
+            this.Totallabel.BackColor = System.Drawing.Color.MistyRose;
+            this.Totallabel.Location = new System.Drawing.Point(732, 724);
+            this.Totallabel.Name = "Totallabel";
+            this.Totallabel.Size = new System.Drawing.Size(20, 20);
+            this.Totallabel.TabIndex = 40;
+            this.Totallabel.Text = "$.";
             // 
             // guna2Button3
             // 
@@ -408,40 +437,58 @@
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
+            // guna2Button4
+            // 
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.FillColor = System.Drawing.Color.White;
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.guna2Button4.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button4.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button4.Image")));
+            this.guna2Button4.ImageSize = new System.Drawing.Size(35, 35);
+            this.guna2Button4.Location = new System.Drawing.Point(1101, 8);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.Size = new System.Drawing.Size(137, 49);
+            this.guna2Button4.TabIndex = 43;
+            this.guna2Button4.Text = "Log Out";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
+            // 
             // UC_Sell_Medicine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.guna2Button4);
             this.Controls.Add(this.guna2Button3);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label10);
+            this.Controls.Add(this.Totallabel);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.gview);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.dtpManufacturing);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dtpExpireDate);
             this.Controls.Add(this.txtQuantity);
             this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtMedName);
-            this.Controls.Add(this.txtMedNumber);
+            this.Controls.Add(this.txtTotalPrice);
             this.Controls.Add(this.txtMedID);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.totprice);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "UC_Sell_Medicine";
-            this.Size = new System.Drawing.Size(1104, 770);
+            this.Size = new System.Drawing.Size(1241, 770);
             this.Load += new System.EventHandler(this.UC_Sell_Medicine_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -449,18 +496,15 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpManufacturing;
-        private Label label8;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpExpireDate;
         private TextBox txtQuantity;
         private TextBox txtPrice;
         private TextBox txtMedName;
-        private TextBox txtMedNumber;
+        private TextBox txtTotalPrice;
         private TextBox txtMedID;
         private Label label7;
-        private Label label6;
+        private Label totprice;
         private Label label5;
         private Label label4;
         private Label label3;
@@ -469,12 +513,19 @@
         private ListBox listBox1;
         private Label label9;
         private TextBox textBox1;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView gview;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Label label10;
+        private Label Totallabel;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
         private PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private DataGridViewTextBoxColumn column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
+        private DataGridViewTextBoxColumn Column4;
+        private DataGridViewTextBoxColumn Column5;
+        private DataGridViewTextBoxColumn Column6;
     }
 }

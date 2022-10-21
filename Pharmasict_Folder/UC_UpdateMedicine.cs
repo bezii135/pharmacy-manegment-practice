@@ -128,7 +128,7 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
         {
             clearAll();
         }
-        Int64 totalQuantity;
+       Int64 totalQuantity;
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
@@ -136,14 +136,21 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
             String mnumber = txtMedNumber.Text;
             String mdate = dtpManufacturing.Text;
             String edate = dtpExpireDate.Text;
-            Int64 quantity =Int64.Parse( txtQuantity.Text);
+            Int64 quantity = Int64.Parse(txtQuantity.Text);
             Int64 addquantity = Int64.Parse(textBox1.Text);
-            String unitPrice = txtPrice.Text;
+            Int64 unitPrice = Int64.Parse(txtPrice.Text);
 
             totalQuantity = quantity + addquantity;
+            try
+            {
+                query = " update medic set mname ='" + mname + "',mnumber='" + mnumber + "', mdate='" + mdate + "', edate='" + edate + "', quantity='" + totalQuantity + "',perUnit= '" + unitPrice + "' where mid ='" + txtMedID.Text + "'";
+                fn.setData(query, "Medicine details updated.");
 
-            query = " update medic set mname ='" + mname + "',mnumber='" + mnumber + "', mdate='" + mdate + "', edate'" + edate + "', quantity='" + totalQuantity + "',perUnit= '" + unitPrice + " where mid ='" + txtMedID.Text + "'";
-            fn.setData(query, "medicine details updated.");
+            }
+            catch
+            {
+                MessageBox.Show("ERROR!!!!!!!!");
+            }
         }
     }
 }
