@@ -116,6 +116,7 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
         private void listBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
 
+
         }
 
         private void txtMedID_TextChanged(object sender, EventArgs e)
@@ -147,6 +148,10 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
                 Int64 TotalAmount =unitPrice* noOfUnit;
                 txtTotalPrice.Text = TotalAmount.ToString();
 
+            }
+            else
+            {
+                txtTotalPrice.Clear();
             }
         }
 
@@ -234,9 +239,9 @@ namespace pharmacy_manegment_practice.Pharmasict_Folder
                     gview.Rows[r].Cells[5].Value = txtTotalPrice.Text;
 
                     TotalAmount= TotalAmount+int.Parse(txtTotalPrice.Text);
-                    Totallabel.Text= "$. " + TotalAmount.ToString();
+                    Totallabel.Text= "Rs. " + TotalAmount.ToString();
                     query = "Update medic set quantity ='" + newQuantity + "' where mid= '" + txtMedID.Text + "'";
-                    fn.setData(query, "Medicinee Added.");
+                    fn.setData(query, "Medicine Added.");
 
                 }
                 else

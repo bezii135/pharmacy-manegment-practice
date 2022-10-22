@@ -30,7 +30,7 @@ namespace pharmacy_manegment_practice
 
         private void UC_Profile_Load(object sender, EventArgs e )
         {
-            userNameLabel.Text = "Beza";
+            userNameLabel.Text = "'";
             Administrator a = new Administrator();
             userNameLabel.Text = a.x("");
                 

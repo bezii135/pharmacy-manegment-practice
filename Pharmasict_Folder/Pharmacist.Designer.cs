@@ -58,7 +58,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Tan;
+            this.panel1.BackColor = System.Drawing.Color.Green;
             this.panel1.Controls.Add(this.btnlogout);
             this.panel1.Controls.Add(this.btnmedicinevaliditycheck);
             this.panel1.Controls.Add(this.btnaddmedicine);
@@ -82,7 +82,7 @@
             this.btnlogout.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnlogout.FillColor = System.Drawing.Color.Transparent;
             this.btnlogout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnlogout.ForeColor = System.Drawing.Color.White;
+            this.btnlogout.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnlogout.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btnlogout.HoverState.FillColor = System.Drawing.Color.Peru;
             this.btnlogout.Image = ((System.Drawing.Image)(resources.GetObject("btnlogout.Image")));
@@ -102,7 +102,7 @@
             this.btnmedicinevaliditycheck.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnmedicinevaliditycheck.FillColor = System.Drawing.Color.Transparent;
             this.btnmedicinevaliditycheck.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnmedicinevaliditycheck.ForeColor = System.Drawing.Color.White;
+            this.btnmedicinevaliditycheck.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnmedicinevaliditycheck.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btnmedicinevaliditycheck.HoverState.FillColor = System.Drawing.Color.Peru;
             this.btnmedicinevaliditycheck.Image = ((System.Drawing.Image)(resources.GetObject("btnmedicinevaliditycheck.Image")));
@@ -122,7 +122,7 @@
             this.btnaddmedicine.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnaddmedicine.FillColor = System.Drawing.Color.Transparent;
             this.btnaddmedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnaddmedicine.ForeColor = System.Drawing.Color.White;
+            this.btnaddmedicine.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnaddmedicine.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btnaddmedicine.HoverState.FillColor = System.Drawing.Color.Peru;
             this.btnaddmedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnaddmedicine.Image")));
@@ -142,7 +142,7 @@
             this.btnmodifymedicine.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnmodifymedicine.FillColor = System.Drawing.Color.Transparent;
             this.btnmodifymedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnmodifymedicine.ForeColor = System.Drawing.Color.White;
+            this.btnmodifymedicine.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnmodifymedicine.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btnmodifymedicine.HoverState.FillColor = System.Drawing.Color.Peru;
             this.btnmodifymedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnmodifymedicine.Image")));
@@ -162,7 +162,7 @@
             this.btnviewmedicine.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnviewmedicine.FillColor = System.Drawing.Color.Transparent;
             this.btnviewmedicine.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnviewmedicine.ForeColor = System.Drawing.Color.White;
+            this.btnviewmedicine.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnviewmedicine.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btnviewmedicine.HoverState.FillColor = System.Drawing.Color.Peru;
             this.btnviewmedicine.Image = ((System.Drawing.Image)(resources.GetObject("btnviewmedicine.Image")));
@@ -182,7 +182,7 @@
             this.btndashbaord.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btndashbaord.FillColor = System.Drawing.Color.Transparent;
             this.btndashbaord.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btndashbaord.ForeColor = System.Drawing.Color.White;
+            this.btndashbaord.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btndashbaord.HoverState.BorderColor = System.Drawing.Color.Black;
             this.btndashbaord.HoverState.FillColor = System.Drawing.Color.Peru;
             this.btndashbaord.Image = ((System.Drawing.Image)(resources.GetObject("btndashbaord.Image")));
@@ -198,7 +198,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bookman Old Style", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(68, 179);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(68, 197);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(191, 36);
             this.label1.TabIndex = 1;
@@ -207,7 +208,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(50, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(48, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(221, 173);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -230,6 +231,7 @@
             // 
             // uC_ValidtyCheck1
             // 
+            this.uC_ValidtyCheck1.BackColor = System.Drawing.Color.White;
             this.uC_ValidtyCheck1.Location = new System.Drawing.Point(0, 0);
             this.uC_ValidtyCheck1.Name = "uC_ValidtyCheck1";
             this.uC_ValidtyCheck1.Size = new System.Drawing.Size(1380, 962);
